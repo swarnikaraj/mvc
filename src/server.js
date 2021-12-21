@@ -1,6 +1,6 @@
 const app = require('./index');
 
-const connect = require('./configs/db');
+const connect = require('./config/db');
 
 app.listen('4500', async ()=>{
     await connect();

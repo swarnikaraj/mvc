@@ -1,7 +1,7 @@
 const express = require('express');
-const userController = require('./controllers/user.controller');
-const studentController = require('./controllers/student.controller');
-const evaluationController  = require('./controllers/evaluation.controller');
+const userController = require('./controller/user.controller');
+const studentController = require('./controller/student.controller');
+const evaluationController  = require('./controller/evaluation.controller');
 
 const app = express();
 
