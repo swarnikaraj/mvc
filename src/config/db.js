@@ -1,5 +1,5 @@
-const mongoose=require("mongoose")
+const mongoose = require('mongoose');
 
-const app= require("../index")
-
-
+module.exports = ()=>{
+    return mongoose.connect("mongodb://127.0.0.1:27017/expressMVC");
+}

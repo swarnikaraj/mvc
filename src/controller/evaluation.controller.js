@@ -1,14 +1,14 @@
 const express = require('express');
-const User = require('../models/user.model');
+const Evaluation = require('../models/evaluation.model');
 
 
 const router = express.Router();
 
 router.post("/", async(req,res)=>{
     try{
-        const user = await User.create(req.body);
+        const evaluation = await Evaluation.create(req.body);
 
-        return res.send(user);
+        return res.send(evaluation);
     }
     catch(e){
         return res.status(500).json({status:"Failed",message:e.message});
